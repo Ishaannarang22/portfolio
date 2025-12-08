@@ -27,7 +27,7 @@ export function Interests() {
             <div className="space-y-1 font-mono text-sm">
               {coffeeGear.map((gear, index) => (
                 <div key={index} className="text-zinc-400">
-                  <span className="text-zinc-600">{'>>>'} </span>
+                  <span className="text-zinc-600">{'>>'} </span>
                   {gear.name}
                   <span className="text-zinc-600"> // {gear.type}</span>
                 </div>
@@ -47,7 +47,7 @@ export function Interests() {
             <div className="space-y-1 font-mono text-sm">
               {chessStats.map((stat, index) => (
                 <div key={index} className="text-zinc-400">
-                  <span className="text-zinc-600">{'>>>'} </span>
+                  <span className="text-zinc-600">{'>>'} </span>
                   {stat.link ? (
                     <a
                       href={stat.link}
