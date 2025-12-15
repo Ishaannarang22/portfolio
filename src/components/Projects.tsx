@@ -15,7 +15,7 @@ export function Projects() {
       id: '1',
       title: 'Surge.events',
       description: 'Multi-tenant tourism SaaS that aggregates, analyzes, and publishes events for municipalities. Includes Elastic-powered semantic search, multi-source ingestion pipelines, and real-time click tracking. Built in under 4 weeks and secured its first B2B customer immediately.',
-      technologies: ['Next.js', 'Supabase', 'ElasticSearch', 'n8n', 'Edge Functions'],
+      technologies: ['Next.js', 'Supabase', 'ElasticSearch', 'n8n', 'Edge Functions', 'Cloudflare R2', 'Amazon SES'],
       githubUrl: 'https://github.com/Ishaannarang22/surge-events',
       liveUrl: 'https://surge.events'
     },
