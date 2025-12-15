@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from 'lucide-react';
+import { ArrowSquareOut, GithubLogo } from '@phosphor-icons/react';
 
 interface Project {
   id: string;
@@ -70,23 +70,23 @@ export function Projects() {
 
   return (
     <section id="projects" className="scroll-mt-8">
-      <h2 className="mb-6 text-white section-heading"><span className="text-zinc-600">&gt;</span> Projects</h2>
-      
+      <h2 className="mb-6 text-crema section-heading"><span className="text-caramel">&gt;</span> Projects</h2>
+
       <div className="space-y-10 section-content">
         {projects.map((project) => (
-          <article key={project.id} className="project-card border-b border-zinc-800/50 last:border-b-0 last:pb-0">
+          <article key={project.id} className="project-card border-b border-roasted/50 last:border-b-0 last:pb-0">
             <div className="flex items-start justify-between gap-4 mb-2">
               {(project.liveUrl || project.githubUrl) ? (
                 <a
                   href={project.liveUrl || project.githubUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-zinc-300 transition-colors"
+                  className="text-crema hover:text-amber transition-colors"
                 >
                   <h3>{project.title}</h3>
                 </a>
               ) : (
-                <h3 className="text-white">{project.title}</h3>
+                <h3 className="text-crema">{project.title}</h3>
               )}
               <div className="flex gap-4 shrink-0">
                 {project.githubUrl && (
@@ -94,10 +94,10 @@ export function Projects() {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-zinc-600 hover:text-zinc-400 transition-colors"
+                    className="text-mocha hover:text-caramel transition-colors"
                     aria-label="View source on GitHub"
                   >
-                    <Github size={18} />
+                    <GithubLogo size={18} weight="regular" />
                   </a>
                 )}
                 {project.liveUrl && (
@@ -105,22 +105,22 @@ export function Projects() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-zinc-600 hover:text-zinc-400 transition-colors"
+                    className="text-mocha hover:text-caramel transition-colors"
                     aria-label="View live demo"
                   >
-                    <ExternalLink size={18} />
+                    <ArrowSquareOut size={18} weight="regular" />
                   </a>
                 )}
               </div>
             </div>
-            
-            <p className="text-zinc-400 mb-4 body-text">
+
+            <p className="text-latte mb-4 body-text">
               {project.description}
             </p>
-            
-            <div className="flex flex-wrap gap-3 font-mono text-sm text-zinc-600">
+
+            <div className="flex flex-wrap gap-2 font-mono text-sm">
               {project.technologies.map((tech, index) => (
-                <span key={index}>
+                <span key={index} className="tech-tag">
                   {tech}
                 </span>
               ))}

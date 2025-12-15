@@ -29,11 +29,11 @@ export function About() {
 
   return (
     <section id="about" className="scroll-mt-8">
-      <h2 className="mb-6 text-white section-heading"><span className="text-zinc-600">&gt;</span> About</h2>
-      
+      <h2 className="mb-6 text-crema section-heading"><span className="text-caramel">&gt;</span> About</h2>
+
       <div className="space-y-8 section-content">
         {/* Bio */}
-        <p className="text-zinc-400 body-text">
+        <p className="text-latte body-text">
           {ishaan.bio}
         </p>
 
