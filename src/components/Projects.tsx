@@ -72,9 +72,9 @@ export function Projects() {
     <section id="projects" className="scroll-mt-8">
       <h2 className="mb-6 text-white section-heading"><span className="text-zinc-600">&gt;</span> Projects</h2>
       
-      <div className="space-y-8 section-content">
+      <div className="space-y-10 section-content">
         {projects.map((project) => (
-          <article key={project.id} className="pb-8 border-b border-zinc-800/50 last:border-b-0 last:pb-0">
+          <article key={project.id} className="project-card border-b border-zinc-800/50 last:border-b-0 last:pb-0">
             <div className="flex items-start justify-between gap-4 mb-2">
               {(project.liveUrl || project.githubUrl) ? (
                 <a
@@ -114,7 +114,7 @@ export function Projects() {
               </div>
             </div>
             
-            <p className="text-zinc-400 mb-3 leading-relaxed">
+            <p className="text-zinc-400 mb-4 body-text">
               {project.description}
             </p>
             

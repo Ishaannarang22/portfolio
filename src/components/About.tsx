@@ -33,7 +33,7 @@ export function About() {
       
       <div className="space-y-8 section-content">
         {/* Bio */}
-        <p className="text-zinc-400 leading-relaxed">
+        <p className="text-zinc-400 body-text">
           {ishaan.bio}
         </p>
 

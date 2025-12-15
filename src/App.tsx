@@ -11,7 +11,7 @@ export default function App() {
     <div className="min-h-screen bg-black">
       {/* Header */}
       <header className="sticky top-0 z-10 header-blur">
-        <div className="max-w-5xl mx-auto px-6 py-12">
+        <div className="content-width mx-auto px-6 py-12">
           <div className="flex flex-col md:flex-row items-center gap-8 animate-fade-in">
             {/* Profile Photo */}
             <div className="shrink-0">
@@ -67,7 +67,7 @@ export default function App() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-5xl mx-auto px-6 py-12 section-spacing animate-stagger">
+      <main className="content-width mx-auto px-6 py-12 section-spacing animate-stagger">
         <About />
         <Projects />
         <Experience />
@@ -77,7 +77,7 @@ export default function App() {
 
       {/* Footer */}
       <footer className="bg-black mt-20 border-t border-zinc-900">
-        <div className="max-w-5xl mx-auto px-6 py-6">
+        <div className="content-width mx-auto px-6 py-6">
           <p className="text-zinc-700 text-sm text-center">© 2025 Ishaan Narang</p>
         </div>
       </footer>

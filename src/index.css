@@ -44,6 +44,33 @@ html {
   font-size: 14px !important;
 }
 
+/* Whitespace improvements for readability */
+/* Narrower content container for better line length */
+.content-width {
+  max-width: 720px;
+}
+
+/* Improved line height for body text */
+.body-text {
+  line-height: 1.8;
+}
+
+/* Better spacing for bullet/highlight lists */
+.highlight-list > * + * {
+  margin-top: 0.625rem; /* 10px */
+}
+
+/* Project card internal spacing */
+.project-card {
+  padding-bottom: 2.5rem; /* 40px */
+  margin-bottom: 0.5rem;
+}
+
+/* Experience card spacing */
+.experience-card {
+  padding-bottom: 2rem; /* 32px */
+}
+
 /* Child items indentation for hierarchy */
 .section-content {
   padding-left: 1.5rem;

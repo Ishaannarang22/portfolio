@@ -15,16 +15,16 @@ export function Interests() {
     <section id="interests" className="scroll-mt-8">
       <h2 className="mb-6 text-white section-heading"><span className="text-zinc-600">&gt;</span> Other Interests</h2>
 
-      <div className="space-y-8 section-content">
-        <div className="pb-8 border-b border-zinc-800/50">
-          <h3 className="mb-3 text-zinc-500">Coffee</h3>
-          <p className="text-zinc-400 leading-relaxed mb-4">
+      <div className="space-y-10 section-content">
+        <div className="pb-10 border-b border-zinc-800/50">
+          <h3 className="mb-4 text-zinc-500">Coffee</h3>
+          <p className="text-zinc-400 body-text mb-5">
             Outside tech, I'm deeply into specialty coffee. I serve as Treasurer of the Coffee Club, manage budgets, and help run tastings and brew classes. My personal setup leans toward clean, bright, fruity cups — usually with V60 and light-roast beans. I'm the guy who will happily discuss extraction theory or grind calibration at 2 AM.
           </p>
 
-          <div className="space-y-3">
+          <div className="space-y-4">
             <p className="text-zinc-500 text-sm font-mono">My Setup:</p>
-            <div className="space-y-1 font-mono text-sm">
+            <div className="highlight-list font-mono text-sm">
               {coffeeGear.map((gear, index) => (
                 <div key={index} className="text-zinc-400">
                   <span className="text-zinc-600">{'>>'} </span>
@@ -37,14 +37,14 @@ export function Interests() {
         </div>
 
         <div>
-          <h3 className="mb-3 text-zinc-500">Chess</h3>
-          <p className="text-zinc-400 leading-relaxed mb-4">
+          <h3 className="mb-4 text-zinc-500">Chess</h3>
+          <p className="text-zinc-400 body-text mb-5">
             I enjoy playing chess as a way to unwind and sharpen my thinking. Big fan of classical openings — the Ruy Lopez is my go-to. Always down for a game.
           </p>
 
-          <div className="space-y-3">
+          <div className="space-y-4">
             <p className="text-zinc-500 text-sm font-mono">Stats:</p>
-            <div className="space-y-1 font-mono text-sm">
+            <div className="highlight-list font-mono text-sm">
               {chessStats.map((stat, index) => (
                 <div key={index} className="text-zinc-400">
                   <span className="text-zinc-600">{'>>'} </span>

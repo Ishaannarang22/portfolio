@@ -66,9 +66,9 @@ export function Experience() {
     <section id="experience" className="scroll-mt-8">
       <h2 className="mb-6 text-white section-heading"><span className="text-zinc-600">&gt;</span> Experience</h2>
       
-      <div className="space-y-8 section-content">
+      <div className="space-y-10 section-content">
         {experiences.map((exp) => (
-          <article key={exp.id}>
+          <article key={exp.id} className="experience-card">
             <h3 className="text-white">{exp.title}</h3>
             <div className="flex flex-wrap gap-3 mt-1 mb-2 text-zinc-500 text-sm">
               <span>{exp.company}</span>
@@ -76,11 +76,11 @@ export function Experience() {
               <span>{exp.period}</span>
             </div>
             
-            <p className="text-zinc-400 leading-relaxed mb-3">
+            <p className="text-zinc-400 body-text mb-4">
               {exp.description}
             </p>
-            
-            <div className="space-y-1 font-mono text-sm">
+
+            <div className="highlight-list font-mono text-sm">
               {exp.highlights.map((highlight, idx) => (
                 <div key={idx} className="text-zinc-400">
                   <span className="text-zinc-600">&gt;</span>{' '}
