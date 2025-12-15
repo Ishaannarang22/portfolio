@@ -4,11 +4,15 @@ import { Experience } from './components/Experience';
 import { Interests } from './components/Interests';
 import { Contact } from './components/Contact';
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
+import { CoffeeDecorations } from './components/CoffeeDecorations';
 import { GithubLogo, InstagramLogo, XLogo } from '@phosphor-icons/react';
 
 export default function App() {
   return (
     <div className="min-h-screen bg-espresso">
+      {/* Coffee decorations - visible on large screens */}
+      <CoffeeDecorations />
+
       {/* Header */}
       <header className="sticky top-0 z-10 header-blur">
         <div className="content-width mx-auto px-6 py-12">
