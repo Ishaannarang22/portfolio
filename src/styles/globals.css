@@ -1,86 +1,82 @@
 @custom-variant dark (&:is(.dark *));
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
+/* Coffee Theme Color Palette */
 :root {
   --font-size: 16px;
-  --background: #ffffff;
-  --foreground: oklch(0.145 0 0);
-  --card: #ffffff;
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: #030213;
-  --primary-foreground: oklch(1 0 0);
-  --secondary: oklch(0.95 0.0058 264.53);
-  --secondary-foreground: #030213;
-  --muted: #ececf0;
-  --muted-foreground: #717182;
-  --accent: #e9ebef;
-  --accent-foreground: #030213;
+
+  /* Coffee Theme Colors */
+  --espresso: #1C1210;
+  --dark-roast: #2D1F1B;
+  --crema: #F5E6D3;
+  --milk-foam: #FDF8F3;
+  --caramel: #C4915E;
+  --amber: #D4A574;
+  --copper: #B87333;
+  --latte: #A89080;
+  --mocha: #6B5B50;
+  --roasted: #4A3C35;
+  --steam: #E8DDD4;
+
+  /* Core Theme Variables */
+  --background: var(--espresso);
+  --foreground: var(--crema);
+  --card: var(--dark-roast);
+  --card-foreground: var(--crema);
+  --popover: var(--dark-roast);
+  --popover-foreground: var(--crema);
+  --primary: var(--caramel);
+  --primary-foreground: var(--espresso);
+  --secondary: var(--roasted);
+  --secondary-foreground: var(--crema);
+  --muted: var(--dark-roast);
+  --muted-foreground: var(--latte);
+  --accent: var(--amber);
+  --accent-foreground: var(--espresso);
   --destructive: #d4183d;
   --destructive-foreground: #ffffff;
-  --border: rgba(0, 0, 0, 0.1);
+  --border: var(--roasted);
   --input: transparent;
-  --input-background: #f3f3f5;
-  --switch-background: #cbced4;
+  --input-background: var(--dark-roast);
+  --switch-background: var(--mocha);
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
+  --ring: var(--caramel);
+  --chart-1: var(--caramel);
+  --chart-2: var(--amber);
+  --chart-3: var(--copper);
+  --chart-4: var(--latte);
+  --chart-5: var(--mocha);
   --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: #030213;
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
+  --sidebar: var(--dark-roast);
+  --sidebar-foreground: var(--crema);
+  --sidebar-primary: var(--caramel);
+  --sidebar-primary-foreground: var(--espresso);
+  --sidebar-accent: var(--roasted);
+  --sidebar-accent-foreground: var(--crema);
+  --sidebar-border: var(--roasted);
+  --sidebar-ring: var(--caramel);
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.145 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.145 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.985 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.396 0.141 25.723);
-  --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.269 0 0);
-  --input: oklch(0.269 0 0);
-  --ring: oklch(0.439 0 0);
-  --font-weight-medium: 500;
-  --font-weight-normal: 400;
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(0.269 0 0);
-  --sidebar-ring: oklch(0.439 0 0);
+  /* Font Families */
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
 }
 
 @theme inline {
+  /* Coffee Colors */
+  --color-espresso: var(--espresso);
+  --color-dark-roast: var(--dark-roast);
+  --color-crema: var(--crema);
+  --color-milk-foam: var(--milk-foam);
+  --color-caramel: var(--caramel);
+  --color-amber: var(--amber);
+  --color-copper: var(--copper);
+  --color-latte: var(--latte);
+  --color-mocha: var(--mocha);
+  --color-roasted: var(--roasted);
+  --color-steam: var(--steam);
+
+  /* Core Theme */
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -119,6 +115,11 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+
+  /* Font Families */
+  --font-sans: var(--font-sans);
+  --font-display: var(--font-display);
+  --font-mono: var(--font-mono);
 }
 
 @layer base {
@@ -128,6 +129,7 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
